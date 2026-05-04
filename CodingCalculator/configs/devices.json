@@ -1,0 +1,32 @@
+{
+  "devices": [
+    {
+      "id": "bcm",
+      "name": "Body Control Module",
+      "codingBytes": 2,
+      "configFile": "bcm_config.json",
+      "sampleFile": "bcm_samples.json"
+    },
+    {
+      "id": "infotainment",
+      "name": "Infotainment Head Unit",
+      "codingBytes": 2,
+      "configFile": "infotainment_config.json",
+      "sampleFile": "infotainment_samples.json"
+    },
+    {
+      "id": "charging",
+      "name": "Charging Control Unit",
+      "codingBytes": 2,
+      "configFile": "charging_config.json",
+      "sampleFile": "charging_samples.json"
+    },
+    {
+      "id": "climate",
+      "name": "Climate Control Unit",
+      "codingBytes": 3,
+      "configFile": "climate_config.json",
+      "sampleFile": "climate_samples.json"
+    }
+  ]
+}

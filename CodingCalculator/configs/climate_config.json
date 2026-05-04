@@ -1,0 +1,263 @@
+{
+  "deviceId": "climate",
+  "codingBytes": 3,
+  "fields": [
+    {
+      "id": "cabinProfile",
+      "name": "Cabin profile",
+      "type": "enum",
+      "bitOffset": 0,
+      "bitLength": 4,
+      "options": [
+        {
+          "name": "Eco",
+          "value": 0
+        },
+        {
+          "name": "Balanced",
+          "value": 1
+        },
+        {
+          "name": "Comfort",
+          "value": 2
+        },
+        {
+          "name": "Dry focus",
+          "value": 3
+        },
+        {
+          "name": "Max comfort",
+          "value": 4
+        },
+        {
+          "name": "Reserved",
+          "value": 5
+        },
+        {
+          "name": "Reserved",
+          "value": 6
+        },
+        {
+          "name": "Reserved",
+          "value": 7
+        },
+        {
+          "name": "Reserved",
+          "value": 8
+        },
+        {
+          "name": "Reserved",
+          "value": 9
+        },
+        {
+          "name": "Reserved",
+          "value": 10
+        },
+        {
+          "name": "Reserved",
+          "value": 11
+        },
+        {
+          "name": "Reserved",
+          "value": 12
+        },
+        {
+          "name": "Reserved",
+          "value": 13
+        },
+        {
+          "name": "Reserved",
+          "value": 14
+        },
+        {
+          "name": "Reserved",
+          "value": 15
+        }
+      ]
+    },
+    {
+      "id": "rearDefog",
+      "name": "Rear defog assist",
+      "type": "bool",
+      "bitOffset": 4,
+      "bitLength": 1
+    },
+    {
+      "id": "remoteStart",
+      "name": "Remote climate start",
+      "type": "bool",
+      "bitOffset": 5,
+      "bitLength": 1
+    },
+    {
+      "id": "tempUnit",
+      "name": "Temperature unit",
+      "type": "enum",
+      "bitOffset": 6,
+      "bitLength": 1,
+      "options": [
+        {
+          "name": "Celsius",
+          "value": 0
+        },
+        {
+          "name": "Fahrenheit",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "blowerStartLevel",
+      "name": "Blower start level",
+      "type": "uint",
+      "bitOffset": 8,
+      "bitLength": 5,
+      "children": [
+        {
+          "id": "airflowTune",
+          "name": "Airflow tune",
+          "type": "enum",
+          "bitOffset": 1,
+          "bitLength": 2,
+          "options": [
+            {
+              "name": "Soft",
+              "value": 0
+            },
+            {
+              "name": "Balanced",
+              "value": 1
+            },
+            {
+              "name": "Strong",
+              "value": 2
+            },
+            {
+              "name": "Reserved",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "id": "blowerBoost",
+          "name": "Blower boost mode",
+          "type": "bool",
+          "bitOffset": 7,
+          "bitLength": 1,
+          "children": [
+            {
+              "id": "boostRecirculation",
+              "name": "Boost recirculation",
+              "type": "bool",
+              "bitOffset": 3,
+              "bitLength": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dualZone",
+      "name": "Dual zone",
+      "type": "bool",
+      "bitOffset": 13,
+      "bitLength": 1
+    },
+    {
+      "id": "autoClimate",
+      "name": "Automatic climate package",
+      "type": "bool",
+      "bitOffset": 20,
+      "bitLength": 1,
+      "children": [
+        {
+          "id": "seatComfort",
+          "name": "Seat comfort package",
+          "type": "bool",
+          "bitOffset": 16,
+          "bitLength": 1,
+          "children": [
+            {
+              "id": "seatVentilation",
+              "name": "Seat ventilation",
+              "type": "bool",
+              "bitOffset": 14,
+              "bitLength": 1
+            },
+            {
+              "id": "seatHeating",
+              "name": "Seat heating",
+              "type": "bool",
+              "bitOffset": 15,
+              "bitLength": 1
+            }
+          ]
+        },
+        {
+          "id": "airQuality",
+          "name": "Air quality package",
+          "type": "bool",
+          "bitOffset": 19,
+          "bitLength": 1,
+          "children": [
+            {
+              "id": "pollenFilter",
+              "name": "Pollen filter",
+              "type": "bool",
+              "bitOffset": 17,
+              "bitLength": 1
+            },
+            {
+              "id": "humidityAssist",
+              "name": "Humidity assist",
+              "type": "bool",
+              "bitOffset": 18,
+              "bitLength": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "name": "Region",
+      "type": "enum",
+      "bitOffset": 21,
+      "bitLength": 3,
+      "options": [
+        {
+          "name": "Europe",
+          "value": 0
+        },
+        {
+          "name": "North America",
+          "value": 1
+        },
+        {
+          "name": "Middle East",
+          "value": 2
+        },
+        {
+          "name": "Reserved",
+          "value": 3
+        },
+        {
+          "name": "Reserved",
+          "value": 4
+        },
+        {
+          "name": "Reserved",
+          "value": 5
+        },
+        {
+          "name": "Reserved",
+          "value": 6
+        },
+        {
+          "name": "Reserved",
+          "value": 7
+        }
+      ]
+    }
+  ]
+}

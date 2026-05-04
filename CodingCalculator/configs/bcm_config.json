@@ -1,0 +1,162 @@
+{
+  "deviceId": "bcm",
+  "codingBytes": 2,
+  "fields": [
+    {
+      "id": "soundInd",
+      "name": "Sound indication",
+      "type": "bool",
+      "bitOffset": 3,
+      "bitLength": 1
+    },
+    {
+      "id": "lightInd",
+      "name": "Light indication",
+      "type": "bool",
+      "bitOffset": 4,
+      "bitLength": 1
+    },
+    {
+      "id": "tank",
+      "name": "Tank size",
+      "type": "enum",
+      "bitOffset": 5,
+      "bitLength": 2,
+      "options": [
+        {
+          "name": "60L",
+          "value": 0
+        },
+        {
+          "name": "45L",
+          "value": 1
+        },
+        {
+          "name": "Reserved",
+          "value": 2
+        },
+        {
+          "name": "Reserved",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "id": "comfort",
+      "name": "Comfort lock",
+      "type": "bool",
+      "bitOffset": 7,
+      "bitLength": 1
+    },
+    {
+      "id": "drl",
+      "name": "Day running lights",
+      "type": "bool",
+      "bitOffset": 8,
+      "bitLength": 1
+    },
+    {
+      "id": "continent",
+      "name": "Continent",
+      "type": "enum",
+      "bitOffset": 13,
+      "bitLength": 3,
+      "options": [
+        {
+          "name": "Europe",
+          "value": 0,
+          "children": [
+            {
+              "id": "country",
+              "name": "Country",
+              "type": "enum",
+              "bitOffset": 9,
+              "bitLength": 4,
+              "options": [
+                {
+                  "name": "Germany",
+                  "value": 0
+                },
+                {
+                  "name": "UK",
+                  "value": 1
+                },
+                {
+                  "name": "France",
+                  "value": 2
+                },
+                {
+                  "name": "Italy",
+                  "value": 3
+                },
+                {
+                  "name": "Spain",
+                  "value": 4
+                },
+                {
+                  "name": "Other",
+                  "value": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "North America",
+          "value": 1,
+          "children": [
+            {
+              "id": "country",
+              "name": "Country",
+              "type": "enum",
+              "bitOffset": 9,
+              "bitLength": 4,
+              "options": [
+                {
+                  "name": "USA",
+                  "value": 0
+                },
+                {
+                  "name": "Canada",
+                  "value": 1
+                },
+                {
+                  "name": "Mexico",
+                  "value": 2
+                },
+                {
+                  "name": "Other",
+                  "value": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Reserved",
+          "value": 2
+        },
+        {
+          "name": "Reserved",
+          "value": 3
+        },
+        {
+          "name": "Reserved",
+          "value": 4
+        },
+        {
+          "name": "Reserved",
+          "value": 5
+        },
+        {
+          "name": "Reserved",
+          "value": 6
+        },
+        {
+          "name": "Reserved",
+          "value": 7
+        }
+      ]
+    }
+  ]
+}

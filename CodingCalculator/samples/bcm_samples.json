@@ -1,0 +1,20 @@
+{
+    "deviceId": "bcm",
+    "samples": [
+        {
+            "codingHex": "0000",
+            "id": "eu_default",
+            "name": "EU default"
+        },
+        {
+            "codingHex": "0130",
+            "id": "eu_loaded",
+            "name": "EU loaded"
+        },
+        {
+            "codingHex": "20D6",
+            "id": "na_basic",
+            "name": "NA basic"
+        }
+    ]
+}

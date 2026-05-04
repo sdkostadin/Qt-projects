@@ -1,0 +1,160 @@
+{
+  "deviceId": "infotainment",
+  "codingBytes": 2,
+  "fields": [
+    {
+      "id": "updates",
+      "name": "OTA updates",
+      "type": "bool",
+      "bitOffset": 0,
+      "bitLength": 1
+    },
+    {
+      "id": "nav",
+      "name": "Navigation",
+      "type": "bool",
+      "bitOffset": 1,
+      "bitLength": 1
+    },
+    {
+      "id": "voice",
+      "name": "Voice hints",
+      "type": "bool",
+      "bitOffset": 2,
+      "bitLength": 1
+    },
+    {
+      "id": "touch",
+      "name": "Touch sound",
+      "type": "bool",
+      "bitOffset": 3,
+      "bitLength": 1
+    },
+    {
+      "id": "wireless",
+      "name": "Wireless",
+      "type": "bool",
+      "bitOffset": 4,
+      "bitLength": 1
+    },
+    {
+      "id": "dab",
+      "name": "DAB",
+      "type": "bool",
+      "bitOffset": 5,
+      "bitLength": 1
+    },
+    {
+      "id": "logo",
+      "name": "Startup logo",
+      "type": "bool",
+      "bitOffset": 6,
+      "bitLength": 1
+    },
+    {
+      "id": "surround",
+      "name": "Surround",
+      "type": "bool",
+      "bitOffset": 7,
+      "bitLength": 1
+    },
+    {
+      "id": "amp",
+      "name": "Amplifier",
+      "type": "bool",
+      "bitOffset": 8,
+      "bitLength": 1
+    },
+    {
+      "id": "theme",
+      "name": "Theme",
+      "type": "bool",
+      "bitOffset": 9,
+      "bitLength": 1
+    },
+    {
+      "id": "region",
+      "name": "Region",
+      "type": "enum",
+      "bitOffset": 13,
+      "bitLength": 3,
+      "options": [
+        {
+          "name": "EU",
+          "value": 0,
+          "children": [
+            {
+              "id": "radio",
+              "name": "Radio step",
+              "type": "enum",
+              "bitOffset": 10,
+              "bitLength": 3,
+              "options": [
+                {
+                  "name": "50 kHz",
+                  "value": 0
+                },
+                {
+                  "name": "100 kHz",
+                  "value": 1
+                },
+                {
+                  "name": "Reserved",
+                  "value": 2
+                },
+                {
+                  "name": "Reserved",
+                  "value": 3
+                },
+                {
+                  "name": "Reserved",
+                  "value": 4
+                },
+                {
+                  "name": "Reserved",
+                  "value": 5
+                },
+                {
+                  "name": "Reserved",
+                  "value": 6
+                },
+                {
+                  "name": "Reserved",
+                  "value": 7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Reserved",
+          "value": 1
+        },
+        {
+          "name": "Reserved",
+          "value": 2
+        },
+        {
+          "name": "Reserved",
+          "value": 3
+        },
+        {
+          "name": "Reserved",
+          "value": 4
+        },
+        {
+          "name": "Reserved",
+          "value": 5
+        },
+        {
+          "name": "Reserved",
+          "value": 6
+        },
+        {
+          "name": "Reserved",
+          "value": 7
+        }
+      ]
+    }
+  ]
+}

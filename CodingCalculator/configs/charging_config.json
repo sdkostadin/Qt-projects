@@ -1,0 +1,419 @@
+{
+  "deviceId": "charging",
+  "codingBytes": 2,
+  "fields": [
+    {
+      "id": "warn",
+      "name": "Acoustic warning",
+      "type": "bool",
+      "bitOffset": 0,
+      "bitLength": 1
+    },
+    {
+      "id": "preheat",
+      "name": "Battery preheat",
+      "type": "bool",
+      "bitOffset": 1,
+      "bitLength": 1
+    },
+    {
+      "id": "plugLock",
+      "name": "Plug lock",
+      "type": "bool",
+      "bitOffset": 2,
+      "bitLength": 1
+    },
+    {
+      "id": "currentLimit",
+      "name": "Current limit",
+      "type": "enum",
+      "bitOffset": 3,
+      "bitLength": 2,
+      "options": [
+        {
+          "name": "Low",
+          "value": 0
+        },
+        {
+          "name": "Medium",
+          "value": 1
+        },
+        {
+          "name": "High",
+          "value": 2
+        },
+        {
+          "name": "Reserved",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "name": "Region",
+      "type": "enum",
+      "bitOffset": 11,
+      "bitLength": 3,
+      "options": [
+        {
+          "name": "EU",
+          "value": 0,
+          "children": [
+            {
+              "id": "connector",
+              "name": "Connector",
+              "type": "enum",
+              "bitOffset": 8,
+              "bitLength": 3,
+              "options": [
+                {
+                  "name": "Type 2",
+                  "value": 0,
+                  "children": [
+                    {
+                      "id": "powerProfile",
+                      "name": "Power profile",
+                      "type": "enum",
+                      "bitOffset": 5,
+                      "bitLength": 3,
+                      "options": [
+                        {
+                          "name": "11 kW",
+                          "value": 0
+                        },
+                        {
+                          "name": "22 kW",
+                          "value": 1
+                        },
+                        {
+                          "name": "Reserved",
+                          "value": 2
+                        },
+                        {
+                          "name": "Reserved",
+                          "value": 3
+                        },
+                        {
+                          "name": "Reserved",
+                          "value": 4
+                        },
+                        {
+                          "name": "Reserved",
+                          "value": 5
+                        },
+                        {
+                          "name": "Reserved",
+                          "value": 6
+                        },
+                        {
+                          "name": "Reserved",
+                          "value": 7
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "CCS2",
+                  "value": 1,
+                  "children": [
+                    {
+                      "id": "powerProfile",
+                      "name": "Power profile",
+                      "type": "enum",
+                      "bitOffset": 5,
+                      "bitLength": 3,
+                      "options": [
+                        {
+                          "name": "50 kW",
+                          "value": 0
+                        },
+                        {
+                          "name": "100 kW",
+                          "value": 1
+                        },
+                        {
+                          "name": "150 kW",
+                          "value": 2
+                        },
+                        {
+                          "name": "Reserved",
+                          "value": 3
+                        },
+                        {
+                          "name": "Reserved",
+                          "value": 4
+                        },
+                        {
+                          "name": "Reserved",
+                          "value": 5
+                        },
+                        {
+                          "name": "Reserved",
+                          "value": 6
+                        },
+                        {
+                          "name": "Reserved",
+                          "value": 7
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Reserved",
+                  "value": 2
+                },
+                {
+                  "name": "Reserved",
+                  "value": 3
+                },
+                {
+                  "name": "Reserved",
+                  "value": 4
+                },
+                {
+                  "name": "Reserved",
+                  "value": 5
+                },
+                {
+                  "name": "Reserved",
+                  "value": 6
+                },
+                {
+                  "name": "Reserved",
+                  "value": 7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "North America",
+          "value": 1,
+          "children": [
+            {
+              "id": "connector",
+              "name": "Connector",
+              "type": "enum",
+              "bitOffset": 8,
+              "bitLength": 3,
+              "options": [
+                {
+                  "name": "Type 1",
+                  "value": 0,
+                  "children": [
+                    {
+                      "id": "powerProfile",
+                      "name": "Power profile",
+                      "type": "enum",
+                      "bitOffset": 5,
+                      "bitLength": 3,
+                      "options": [
+                        {
+                          "name": "7 kW",
+                          "value": 0
+                        },
+                        {
+                          "name": "11 kW",
+                          "value": 1
+                        },
+                        {
+                          "name": "Reserved",
+                          "value": 2
+                        },
+                        {
+                          "name": "Reserved",
+                          "value": 3
+                        },
+                        {
+                          "name": "Reserved",
+                          "value": 4
+                        },
+                        {
+                          "name": "Reserved",
+                          "value": 5
+                        },
+                        {
+                          "name": "Reserved",
+                          "value": 6
+                        },
+                        {
+                          "name": "Reserved",
+                          "value": 7
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "CCS1",
+                  "value": 1,
+                  "children": [
+                    {
+                      "id": "powerProfile",
+                      "name": "Power profile",
+                      "type": "enum",
+                      "bitOffset": 5,
+                      "bitLength": 3,
+                      "options": [
+                        {
+                          "name": "50 kW",
+                          "value": 0
+                        },
+                        {
+                          "name": "150 kW",
+                          "value": 1
+                        },
+                        {
+                          "name": "Reserved",
+                          "value": 2
+                        },
+                        {
+                          "name": "Reserved",
+                          "value": 3
+                        },
+                        {
+                          "name": "Reserved",
+                          "value": 4
+                        },
+                        {
+                          "name": "Reserved",
+                          "value": 5
+                        },
+                        {
+                          "name": "Reserved",
+                          "value": 6
+                        },
+                        {
+                          "name": "Reserved",
+                          "value": 7
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "NACS",
+                  "value": 2,
+                  "children": [
+                    {
+                      "id": "powerProfile",
+                      "name": "Power profile",
+                      "type": "enum",
+                      "bitOffset": 5,
+                      "bitLength": 3,
+                      "options": [
+                        {
+                          "name": "11 kW",
+                          "value": 0
+                        },
+                        {
+                          "name": "150 kW",
+                          "value": 1
+                        },
+                        {
+                          "name": "250 kW",
+                          "value": 2
+                        },
+                        {
+                          "name": "Reserved",
+                          "value": 3
+                        },
+                        {
+                          "name": "Reserved",
+                          "value": 4
+                        },
+                        {
+                          "name": "Reserved",
+                          "value": 5
+                        },
+                        {
+                          "name": "Reserved",
+                          "value": 6
+                        },
+                        {
+                          "name": "Reserved",
+                          "value": 7
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Reserved",
+                  "value": 3
+                },
+                {
+                  "name": "Reserved",
+                  "value": 4
+                },
+                {
+                  "name": "Reserved",
+                  "value": 5
+                },
+                {
+                  "name": "Reserved",
+                  "value": 6
+                },
+                {
+                  "name": "Reserved",
+                  "value": 7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Reserved",
+          "value": 2
+        },
+        {
+          "name": "Reserved",
+          "value": 3
+        },
+        {
+          "name": "Reserved",
+          "value": 4
+        },
+        {
+          "name": "Reserved",
+          "value": 5
+        },
+        {
+          "name": "Reserved",
+          "value": 6
+        },
+        {
+          "name": "Reserved",
+          "value": 7
+        }
+      ]
+    },
+    {
+      "id": "chargeMode",
+      "name": "Charge mode",
+      "type": "enum",
+      "bitOffset": 14,
+      "bitLength": 2,
+      "options": [
+        {
+          "name": "Home",
+          "value": 0
+        },
+        {
+          "name": "Public",
+          "value": 1
+        },
+        {
+          "name": "Service",
+          "value": 2
+        },
+        {
+          "name": "Reserved",
+          "value": 3
+        }
+      ]
+    }
+  ]
+}

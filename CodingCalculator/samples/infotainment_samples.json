@@ -1,0 +1,20 @@
+{
+    "deviceId": "infotainment",
+    "samples": [
+        {
+            "codingHex": "2B60",
+            "id": "classic",
+            "name": "Classic setup"
+        },
+        {
+            "codingHex": "0000",
+            "id": "clean",
+            "name": "Clean setup"
+        },
+        {
+            "codingHex": "1F70",
+            "id": "media_plus",
+            "name": "Media plus"
+        }
+    ]
+}

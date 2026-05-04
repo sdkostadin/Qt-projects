@@ -1,0 +1,20 @@
+{
+    "deviceId": "climate",
+    "samples": [
+        {
+            "codingHex": "1FB232",
+            "id": "comfort_eu",
+            "name": "EU comfort"
+        },
+        {
+            "codingHex": "000000",
+            "id": "base",
+            "name": "Base setup"
+        },
+        {
+            "codingHex": "31B9F1",
+            "id": "na_winter",
+            "name": "NA winter"
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "deviceId": "charging",
+    "samples": [
+        {
+            "codingHex": "4123",
+            "id": "eu_type2",
+            "name": "EU Type 2"
+        },
+        {
+            "codingHex": "0000",
+            "id": "eu_basic",
+            "name": "EU basic"
+        },
+        {
+            "codingHex": "48E0",
+            "id": "na_fast",
+            "name": "NA fast"
+        }
+    ]
+}
