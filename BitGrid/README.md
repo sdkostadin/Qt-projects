@@ -49,10 +49,3 @@ The application represents a 16-bit number as a grid of bits:
 -   Qt 6 (Qt Quick)
 -   QML
 
-------------------------------------------------------------------------
-
-## ▶️ Build
-
-Uses CMake with Qt6:
-
-(see configuration in project files) fileciteturn1file0
